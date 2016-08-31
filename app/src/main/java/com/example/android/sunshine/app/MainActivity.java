@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
 
             String[] fakeData = {
                     "Today - Sunny - 88/63",
-                    "Tomorrow - Foggy - 70/40",
+                    "Tomorrow - Bluffy - 70/40",
                     "Wednesday - Cloudy - 72/63",
                     "Thursday - Asteroids - 75/65",
                     "Friday - Heavy Rain - 65/56",
