@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -54,6 +55,8 @@ public class MainActivity extends ActionBarActivity {
      */
     public static class PlaceholderFragment extends Fragment {
 
+        ArrayAdapter<String> SunshineAdapter;
+
         public PlaceholderFragment() {
         }
 
@@ -71,6 +74,9 @@ public class MainActivity extends ActionBarActivity {
                     "Saturday - Meatballs - 75/32",
                     "Sunday - Sunny - 80/68"
             };
+
+            SunshineAdapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast,
+                    R.id.list_item_forecast_textview, fakeData);
 
             List<String> stringContainer = new ArrayList<>(Arrays.asList(fakeData));
 
